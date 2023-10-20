@@ -4,9 +4,9 @@ using UnityEngine;
 
 public class InteractTrapScript : MonoBehaviour, IInteractable
 {
-    public bool wasUsed = false;
-    public bool canBeUsed = false;
-    [SerializeField] private GameObject Text;
+    private bool wasUsed = false;
+    public static bool canBeUsed = false;
+    private GameObject Text;
     [SerializeField] private Outline outline;
     [SerializeField] private GameObject notUsed;
     [SerializeField] private GameObject used;
@@ -14,6 +14,7 @@ public class InteractTrapScript : MonoBehaviour, IInteractable
     void Start()
     {
         gameObject.GetComponent<Outline>();
+        Text = FindInActiveObjectByTag("InteractText");
         used.SetActive(false);
         notUsed.SetActive(true);
         Text.SetActive(false);
@@ -50,6 +51,7 @@ public class InteractTrapScript : MonoBehaviour, IInteractable
             if (!wasUsed)
             {
                 wasUsed = true;
+                canBeUsed = false;
                 used.SetActive(true);
                 notUsed.SetActive(false);
             }
@@ -62,5 +64,21 @@ public class InteractTrapScript : MonoBehaviour, IInteractable
         {
             return;
         }
+    }
+    GameObject FindInActiveObjectByTag(string tag)
+    {
+
+        Transform[] objs = Resources.FindObjectsOfTypeAll<Transform>() as Transform[];
+        for (int i = 0; i < objs.Length; i++)
+        {
+            if (objs[i].hideFlags == HideFlags.None)
+            {
+                if (objs[i].CompareTag(tag))
+                {
+                    return objs[i].gameObject;
+                }
+            }
+        }
+        return null;
     }
 }

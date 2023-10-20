@@ -4,9 +4,10 @@ using UnityEngine;
 
 public class InteractBranchScript : MonoBehaviour, IInteractable
 {
-
     public void Interact()
     {
+        InteractTrapScript.canBeUsed = true;
+        Destroy(gameObject);
     }
 
     // Start is called before the first frame update
