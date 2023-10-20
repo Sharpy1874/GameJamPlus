@@ -17,7 +17,11 @@ using UnityEngine.UI;
 public class FirstPersonController : MonoBehaviour
 {
     private Rigidbody rb;
-
+    //Player ANim states
+    string _currentState;
+    const string PLAYER_IDLE = "Idle";
+    const string PLAYER_WALK = "walkingAnim";
+    private Animator animator;
     #region Camera Movement Variables
 
     public Camera playerCamera;
@@ -134,7 +138,7 @@ public class FirstPersonController : MonoBehaviour
     private void Awake()
     {
         rb = GetComponent<Rigidbody>();
-
+        animator = gameObject.GetComponentInChildren<Animator>();
         crosshairObject = GetComponentInChildren<Image>();
 
         // Set internal variables
@@ -378,10 +382,12 @@ public class FirstPersonController : MonoBehaviour
             if (targetVelocity.x != 0 || targetVelocity.z != 0 && isGrounded)
             {
                 isWalking = true;
+                ChangeAnimationState(PLAYER_WALK);
             }
             else
             {
                 isWalking = false;
+                ChangeAnimationState(PLAYER_IDLE);
             }
 
             // All movement calculations shile sprint is active
@@ -524,6 +530,32 @@ public class FirstPersonController : MonoBehaviour
             // Resets when play stops moving
             timer = 0;
             joint.localPosition = new Vector3(Mathf.Lerp(joint.localPosition.x, jointOriginalPos.x, Time.deltaTime * bobSpeed), Mathf.Lerp(joint.localPosition.y, jointOriginalPos.y, Time.deltaTime * bobSpeed), Mathf.Lerp(joint.localPosition.z, jointOriginalPos.z, Time.deltaTime * bobSpeed));
+        }
+    }
+
+    private void ChangeAnimationState(string newState)
+    {
+        if (newState == _currentState)
+        {
+            return;
+        }
+
+        animator.Play(newState);
+        _currentState = newState;
+    }
+
+    //check if specific animation is playing
+    //parameter named "0" is the animation layer
+
+    bool IsAnimatorPlaying(Animator animator, string stateName)
+    {
+        if (animator.GetCurrentAnimatorStateInfo(0).IsName(stateName) && animator.GetCurrentAnimatorStateInfo(0).normalizedTime < 1f)
+        {
+            return true;
+        }
+        else
+        {
+            return false;
         }
     }
 }
@@ -736,6 +768,8 @@ public class FirstPersonController : MonoBehaviour
             SerFPC.ApplyModifiedProperties();
         }
     }
+
+ 
 
 }
 
