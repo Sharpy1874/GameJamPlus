@@ -54,6 +54,7 @@ public class InteractTrapScript : MonoBehaviour, IInteractable
                 canBeUsed = false;
                 used.SetActive(true);
                 notUsed.SetActive(false);
+                StartCoroutine(TimeToDespawn(3f));
             }
             else
             {
@@ -64,6 +65,12 @@ public class InteractTrapScript : MonoBehaviour, IInteractable
         {
             return;
         }
+    }
+
+    private IEnumerator TimeToDespawn(float time)
+    {
+        yield return new WaitForSeconds(time);
+        Destroy(gameObject);
     }
     GameObject FindInActiveObjectByTag(string tag)
     {

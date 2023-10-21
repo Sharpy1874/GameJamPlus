@@ -451,8 +451,8 @@ public class FirstPersonController : MonoBehaviour
     private void CheckGround()
     {
         Vector3 origin = new Vector3(transform.position.x, transform.position.y - (transform.localScale.y * .5f), transform.position.z);
-        Vector3 direction = transform.TransformDirection(Vector3.down);
-        float distance = .75f;
+        Vector3 direction = transform.TransformDirection(-Vector3.up);
+        float distance = 1.5f;
 
         if (Physics.Raycast(origin, direction, out RaycastHit hit, distance))
         {

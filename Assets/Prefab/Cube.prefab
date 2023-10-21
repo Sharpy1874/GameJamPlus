@@ -143,7 +143,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: de6471e3528a41942ac8d3282e2d19f7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Text: {fileID: 2044872094775197789, guid: fa06cda92bd4ba94a9926c2594829303, type: 3}
   outline: {fileID: 123021208670928821}
   notUsed: {fileID: 7815243407308133067}
   used: {fileID: 707512525099136732}

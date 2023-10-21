@@ -1,53 +1,88 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
+using System.Collections.Generic;
 
 public class SpawnSystem : MonoBehaviour
 {
     public GameObject[] spawnPoints;
-    public GameObject Cube;
+    public GameObject CubePrefab; // Assign your Cube prefab in the Inspector
+    public int maxCubes = 3; // Maximum number of cubes to spawn
+    public float minDistanceBetweenCubes = 1.0f;
+
+    private List<Transform> availableSpawnPoints = new List<Transform>();
+    private List<GameObject> cubes = new List<GameObject>();
+
     // Start is called before the first frame update
     void Start()
     {
-        SpawnObjects();
+        InitializeSpawnPoints();
+        SpawnObjects(maxCubes);
     }
 
     // Update is called once per frame
     void Update()
     {
-
+        CheckAndRespawnCubes();
     }
 
-    private void SpawnObjects()
+    private void InitializeSpawnPoints()
     {
-        List<GameObject> tempSpawnPoints = new List<GameObject>();
-        tempSpawnPoints.AddRange(spawnPoints);
-        tempSpawnPoints.Shuffle();
+        availableSpawnPoints.Clear();
 
-        for (int i = 0; i < 3; i++)
+        foreach (GameObject spawnPoint in spawnPoints)
         {
-            RaycastHit hit;
-            if (Physics.Raycast(tempSpawnPoints[i].transform.position, -Vector3.up, out hit))
+            availableSpawnPoints.Add(spawnPoint.transform);
+        }
+    }
+
+    private void SpawnObjects(int numToSpawn)
+    {
+        if (numToSpawn <= 0) return;
+
+        for (int i = 0; i < numToSpawn && availableSpawnPoints.Count > 0; i++)
+        {
+            int randomIndex = Random.Range(0, availableSpawnPoints.Count);
+            Transform spawnPoint = availableSpawnPoints[randomIndex];
+
+            if (!IsCubeCloseToSpawnPoint(spawnPoint))
             {
-                Vector3 location = new Vector3(hit.point.x, hit.point.y + 0.05f, hit.point.z);
-                GameObject poolSpawned = Instantiate(Cube, location, transform.rotation);
+                Vector3 spawnPosition = GetValidSpawnPosition(spawnPoint);
+                GameObject cubeSpawned = Instantiate(CubePrefab, spawnPosition, Quaternion.identity);
+                cubes.Add(cubeSpawned);
+                availableSpawnPoints.RemoveAt(randomIndex);
             }
         }
     }
-}
-    public static class ListExtensions { 
-    public static void Shuffle<T>(this IList<T> list)
+
+    private Vector3 GetValidSpawnPosition(Transform spawnPoint)
     {
-        System.Random rnd = new System.Random();
-        for (var i = 0; i < list.Count; i++)
-            list.Swap(i, rnd.Next(i, list.Count));
+        RaycastHit hit;
+        if (Physics.Raycast(spawnPoint.position, -Vector3.up, out hit))
+        {
+            return new Vector3(hit.point.x, hit.point.y + 0.05f, hit.point.z);
+        }
+        return spawnPoint.position;
     }
 
-    public static void Swap<T>(this IList<T> list, int i, int j)
+    private bool IsCubeCloseToSpawnPoint(Transform spawnPoint)
     {
-        var temp = list[i];
-        list[i] = list[j];
-        list[j] = temp;
+        foreach (var cube in cubes)
+        {
+            if (cube != null && Vector3.Distance(cube.transform.position, spawnPoint.position) < minDistanceBetweenCubes)
+            {
+                return true;
+            }
+        }
+        return false;
+    }
+
+    private void CheckAndRespawnCubes()
+    {
+        cubes.RemoveAll(cube => cube == null);
+
+        int cubesToSpawn = maxCubes - cubes.Count;
+        if (cubesToSpawn > 0)
+        {
+            SpawnObjects(cubesToSpawn);
+        }
     }
 }
-
