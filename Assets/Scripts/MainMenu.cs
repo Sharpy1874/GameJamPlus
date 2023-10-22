@@ -8,8 +8,8 @@ public class MainMenu : MonoBehaviour
 {
     public AudioSource Click;
     public AudioClip ClickSound;
-    public GameObject Options;
-    public GameObject MainCanvas;
+    public GameObject OptionsCanvas;
+    public GameObject MainMenuCanvas;
     public void PlayGame()
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1); ;
@@ -28,13 +28,13 @@ public class MainMenu : MonoBehaviour
 
     public void ShowOptions()
     {
-        Options.SetActive(true);
-        MainCanvas.SetActive(false);
+        OptionsCanvas.SetActive(true);
+        MainMenuCanvas.SetActive(false);
     } 
     public void HideOptions()
     {
-        Options.SetActive(false);
-        MainCanvas.SetActive(true);
+        OptionsCanvas.SetActive(false);
+        MainMenuCanvas.SetActive(true);
     }
 
 
