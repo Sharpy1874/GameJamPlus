@@ -17,7 +17,7 @@ RenderSettings:
   m_Fog: 1
   m_FogColor: {r: 0.5849056, g: 0.52926606, b: 0.37742966, a: 1}
   m_FogMode: 3
-  m_FogDensity: 0
+  m_FogDensity: 0.02
   m_LinearFogStart: 0
   m_LinearFogEnd: 300
   m_AmbientSkyColor: {r: 0.212, g: 0.227, b: 0.259, a: 1}
@@ -44480,6 +44480,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: FirstPersonController
       objectReference: {fileID: 0}
+    - target: {fileID: 6995136182952773140, guid: b8bc3d41d2bef384baebe2f3b44b0beb, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -55359,6 +55363,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_Rock_Pile_04
       objectReference: {fileID: 0}
+    - target: {fileID: 1955666037651256, guid: d5c8b482981a2af429dd7551de6af107, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4505691806356784, guid: d5c8b482981a2af429dd7551de6af107, type: 3}
       propertyPath: m_LocalScale.x
       value: 3.03
@@ -58429,6 +58437,10 @@ PrefabInstance:
     - target: {fileID: 1995264032369740291, guid: 874eef576c7c52d40beefecc37aae6b0, type: 3}
       propertyPath: m_Name
       value: BranchSpawnManager
+      objectReference: {fileID: 0}
+    - target: {fileID: 1995264032369740291, guid: 874eef576c7c52d40beefecc37aae6b0, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2114403247327262838, guid: 874eef576c7c52d40beefecc37aae6b0, type: 3}
       propertyPath: m_LocalPosition.x
@@ -71994,6 +72006,10 @@ PrefabInstance:
     - target: {fileID: 3120272599245428302, guid: 0889dd535727b7f42876e5f16aa700db, type: 3}
       propertyPath: m_Name
       value: TrapSpawnManager
+      objectReference: {fileID: 0}
+    - target: {fileID: 3120272599245428302, guid: 0889dd535727b7f42876e5f16aa700db, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5040143325352807141, guid: 0889dd535727b7f42876e5f16aa700db, type: 3}
       propertyPath: m_LocalPosition.x
