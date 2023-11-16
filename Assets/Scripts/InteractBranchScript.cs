@@ -5,7 +5,6 @@ using UnityEngine;
 public class InteractBranchScript : MonoBehaviour, IInteractable
 {
     private GameObject Text;
-    [SerializeField] private Outline outline;
     public void Interact()
     {
         InteractTrapScript.canBeUsed = true;
@@ -18,18 +17,27 @@ public class InteractBranchScript : MonoBehaviour, IInteractable
         Text = FindInActiveObjectByTag("InteractText");
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-       
-    }
 
+    private void OnDestroy()
+    {
+        if (this.gameObject != null)
+        {
+            Text.SetActive(false);
+        }
+        else
+        {
+            return;
+        }
+    }
     private void OnTriggerEnter(Collider other)
     {
         if (other.gameObject.CompareTag("Player"))
         {
             Text.SetActive(true);
-            outline.OutlineWidth = 10f;
+            if (Input.GetKeyDown(KeyCode.E))
+            {
+                Interact();
+            }
         }
     }
     private void OnTriggerExit(Collider other)
@@ -37,7 +45,6 @@ public class InteractBranchScript : MonoBehaviour, IInteractable
         if (other.gameObject.CompareTag("Player"))
         {
             Text.SetActive(false);
-            outline.OutlineWidth = 0f;
         }
     }
 

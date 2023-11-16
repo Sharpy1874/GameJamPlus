@@ -7,24 +7,16 @@ public class InteractTrapScript : MonoBehaviour, IInteractable
     private bool wasUsed = false;
     public static bool canBeUsed = false;
     private GameObject Text;
-    [SerializeField] private Outline outline;
-    [SerializeField] private GameObject notUsed;
-    [SerializeField] private GameObject used;
+    [SerializeField] private GameObject openTrap;
+    [SerializeField] private GameObject closedTrap;
     // Start is called before the first frame update
     void Start()
     {
         gameObject.GetComponent<Outline>();
         Text = FindInActiveObjectByTag("InteractText");
-        used.SetActive(false);
-        notUsed.SetActive(true);
+        closedTrap.SetActive(false);
+        openTrap.SetActive(true);
         Text.SetActive(false);
-        outline.OutlineWidth = 0f;
-    }
-    
-// Update is called once per frame
-    void Update()
-    {
-        
     }
 
     private void OnTriggerEnter(Collider other)
@@ -32,16 +24,21 @@ public class InteractTrapScript : MonoBehaviour, IInteractable
         if (other.gameObject.CompareTag("Player"))
         {
             Text.SetActive(true);
-            outline.OutlineWidth = 10f;
+        }
+    }
+    private void OnTriggerStay(Collider other)
+    {
+        if (other.gameObject.CompareTag("Player"))
+        {
+            if (Input.GetKeyDown(KeyCode.E))
+            {
+                Interact();
+            }
         }
     }
     private void OnTriggerExit(Collider other)
     {
-        if (other.gameObject.CompareTag("Player"))
-        {
             Text.SetActive(false);
-            outline.OutlineWidth = 0f;
-        }
     }
 
     public void Interact()
@@ -50,11 +47,12 @@ public class InteractTrapScript : MonoBehaviour, IInteractable
         {
             if (!wasUsed)
             {
+                // If trap is open, close it
+                openTrap.SetActive(false);
+                closedTrap.SetActive(true);
                 wasUsed = true;
-                canBeUsed = false;
-                used.SetActive(true);
-                notUsed.SetActive(false);
                 StartCoroutine(TimeToDespawn(3f));
+                Debug.Log("Trap closed!");
             }
             else
             {
