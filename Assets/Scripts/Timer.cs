@@ -6,7 +6,7 @@ public class Timer : MonoBehaviour
 {
     public TMP_Text timerText;
     public float timeLimit = 300.0f; // Time limit in seconds (adjust as needed)
-    public int trapsToDisable = 10; // Number of traps to disable for victory
+    public int trapsToDisable = 8; // Number of traps to disable for victory
 
     private float currentTime;
     public static int trapsDisabled = 0;
@@ -58,7 +58,7 @@ public class Timer : MonoBehaviour
     {
         int minutes = Mathf.FloorToInt(currentTime / 60);
         int seconds = Mathf.FloorToInt(currentTime % 60);
-        timerText.text = string.Format("Time: {0:00}:{1:00}" + " " + "Traps "+ trapsDisabled + "/8", minutes, seconds);
+        timerText.text = string.Format("Time: {0:00}:{1:00}" + " " + "Traps "+ trapsDisabled + "/" + trapsToDisable, minutes, seconds);
     }
 
     // Handle game over (win or lose)

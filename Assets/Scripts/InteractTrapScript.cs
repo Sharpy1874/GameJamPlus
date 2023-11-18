@@ -12,6 +12,7 @@ public class InteractTrapScript : MonoBehaviour, IInteractable
     // Start is called before the first frame update
     void Start()
     {
+        Timer TrapDis = GetComponent<Timer>();
         gameObject.GetComponent<Outline>();
         Text = FindInActiveObjectByTag("InteractText");
         closedTrap.SetActive(false);
