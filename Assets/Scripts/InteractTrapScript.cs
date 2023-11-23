@@ -6,7 +6,8 @@ public class InteractTrapScript : MonoBehaviour, IInteractable
 {
     private bool wasUsed = false;
     public static bool canBeUsed = false;
-    private GameObject Text;
+    private GameObject text;
+    private GameObject timer;
     [SerializeField] private GameObject openTrap;
     [SerializeField] private GameObject closedTrap;
     // Start is called before the first frame update
@@ -14,17 +15,18 @@ public class InteractTrapScript : MonoBehaviour, IInteractable
     {
         Timer TrapDis = GetComponent<Timer>();
         gameObject.GetComponent<Outline>();
-        Text = FindInActiveObjectByTag("InteractText");
+        text = FindInActiveObjectByTag("InteractText");
+        timer = FindInActiveObjectByTag("Timer");
         closedTrap.SetActive(false);
         openTrap.SetActive(true);
-        Text.SetActive(false);
+        text.SetActive(false);
     }
 
     private void OnTriggerEnter(Collider other)
     {
         if (other.gameObject.CompareTag("Player"))
         {
-            Text.SetActive(true);
+            text.SetActive(true);
         }
     }
     private void OnTriggerStay(Collider other)
@@ -39,7 +41,7 @@ public class InteractTrapScript : MonoBehaviour, IInteractable
     }
     private void OnTriggerExit(Collider other)
     {
-            Text.SetActive(false);
+            text.SetActive(false);
     }
 
     public void Interact()
@@ -52,6 +54,8 @@ public class InteractTrapScript : MonoBehaviour, IInteractable
                 openTrap.SetActive(false);
                 closedTrap.SetActive(true);
                 wasUsed = true;
+                PlayerCheckScript.HasBranch = false;
+                timer.GetComponent<Timer>().TrapDisabled();
                 StartCoroutine(TimeToDespawn(3f));
                 Debug.Log("Trap closed!");
             }

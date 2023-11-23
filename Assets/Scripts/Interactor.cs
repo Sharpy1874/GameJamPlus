@@ -22,6 +22,10 @@ public class Interactor : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.E))
         {
+            if (PlayerCheckScript.HasBranch)
+            {
+                return;
+            }
             Ray r = new Ray(InteractorSource.position, InteractorSource.forward);
 
             if (Physics.Raycast(r, out RaycastHit hitInfo, InteractRange))
@@ -31,6 +35,8 @@ public class Interactor : MonoBehaviour
                     interactObj.Interact();
                 }
             }
+
+    
         }
         
     }

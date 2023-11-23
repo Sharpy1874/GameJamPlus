@@ -7,6 +7,7 @@ TagManager:
   - InteractText
   - Trap
   - TrapTrigger
+  - Timer
   layers:
   - Default
   - TransparentFX

@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 8599961517933436497}
   - component: {fileID: 248295418682669402}
   - component: {fileID: 9006607029454273279}
-  - component: {fileID: 3234793632638547169}
+  - component: {fileID: 4239508676401251879}
   m_Layer: 0
   m_Name: Branch
   m_TagString: Untagged
@@ -141,7 +141,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 221ef0278dd754841977f41454aa4370, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &3234793632638547169
+--- !u!114 &4239508676401251879
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -154,8 +154,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   outlineMode: 0
-  outlineColor: {r: 1, g: 0.29682136, b: 0, a: 1}
-  outlineWidth: 10
+  outlineColor: {r: 0.9811321, g: 0.1462068, b: 0.041651815, a: 1}
+  outlineWidth: 2
   precomputeOutline: 0
   bakeKeys: []
   bakeValues: []

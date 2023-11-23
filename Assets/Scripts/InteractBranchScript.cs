@@ -5,10 +5,11 @@ using UnityEngine;
 public class InteractBranchScript : MonoBehaviour, IInteractable
 {
     private GameObject Text;
+
     public void Interact()
     {
-        InteractTrapScript.canBeUsed = true;
-        Destroy(gameObject);
+            InteractTrapScript.canBeUsed = true;
+            Destroy(gameObject);
     }
 
     // Start is called before the first frame update
@@ -29,14 +30,23 @@ public class InteractBranchScript : MonoBehaviour, IInteractable
             return;
         }
     }
-    private void OnTriggerEnter(Collider other)
+    private void OnTriggerStay(Collider other)
     {
         if (other.gameObject.CompareTag("Player"))
         {
             Text.SetActive(true);
+            Debug.Log(PlayerCheckScript.HasBranch); 
             if (Input.GetKeyDown(KeyCode.E))
             {
-                Interact();
+                if (PlayerCheckScript.HasBranch == false)
+                {
+                    PlayerCheckScript.HasBranch = true;
+                    Interact();
+                }
+                else
+                {
+                    return;
+                }
             }
         }
     }

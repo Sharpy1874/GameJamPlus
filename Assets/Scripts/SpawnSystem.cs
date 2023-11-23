@@ -58,7 +58,7 @@ public class SpawnSystem : MonoBehaviour
         RaycastHit hit;
         if (Physics.Raycast(spawnPoint.position, -Vector3.up, out hit))
         {
-            return new Vector3(hit.point.x, hit.point.y + 0.05f, hit.point.z);
+            return new Vector3(hit.point.x, hit.point.y + 0.5f, hit.point.z);
         }
         return spawnPoint.position;
     }
