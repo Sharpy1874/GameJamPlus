@@ -8,8 +8,16 @@ public class InteractBranchScript : MonoBehaviour, IInteractable
 
     public void Interact()
     {
-            InteractTrapScript.canBeUsed = true;
-            Destroy(gameObject);
+        InteractTrapScript.canBeUsed = true;
+        if (this.gameObject != null)
+        {
+            Text.SetActive(false);
+        }
+        else
+        {
+            return;
+        }
+        Destroy(gameObject);
     }
 
     // Start is called before the first frame update
@@ -19,17 +27,6 @@ public class InteractBranchScript : MonoBehaviour, IInteractable
     }
 
 
-    private void OnDestroy()
-    {
-        if (this.gameObject != null)
-        {
-            Text.SetActive(false);
-        }
-        else
-        {
-            return;
-        }
-    }
     private void OnTriggerStay(Collider other)
     {
         if (other.gameObject.CompareTag("Player"))
