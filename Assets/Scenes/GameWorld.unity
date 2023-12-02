@@ -13330,7 +13330,8 @@ PrefabInstance:
       propertyPath: m_CullingMask.m_Bits
       value: 1527
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 0}
     m_RemovedGameObjects: []
     m_AddedGameObjects:
     - targetCorrespondingSourceObject: {fileID: 4301717871961465938, guid: b8bc3d41d2bef384baebe2f3b44b0beb, type: 3}
@@ -13343,6 +13344,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 6995136182952773140, guid: b8bc3d41d2bef384baebe2f3b44b0beb, type: 3}
       insertIndex: -1
       addedObject: {fileID: 2108963506}
+    - targetCorrespondingSourceObject: {fileID: 4906255563974427621, guid: b8bc3d41d2bef384baebe2f3b44b0beb, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2128994728}
   m_SourcePrefab: {fileID: 100100000, guid: b8bc3d41d2bef384baebe2f3b44b0beb, type: 3}
 --- !u!1001 &1166261924
 PrefabInstance:
@@ -23644,7 +23648,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.01586312, y: 0.8184177}
   m_AnchorMax: {x: 0.24082132, y: 0.9625279}
-  m_AnchoredPosition: {x: 756, y: -817}
+  m_AnchoredPosition: {x: 756, y: -817.00006}
   m_SizeDelta: {x: 477.618, y: -7}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1939124034
@@ -25974,6 +25978,24 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4704772494426858, guid: d68870cf1b8968f49b16b4eaebdce109, type: 3}
   m_PrefabInstance: {fileID: 2128886223}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &2128994723 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4906255563974427621, guid: b8bc3d41d2bef384baebe2f3b44b0beb, type: 3}
+  m_PrefabInstance: {fileID: 1165229586}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &2128994728
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2128994723}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 86c6556701af9e04380698b89f691b6e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  attenuationObject: {fileID: 0}
 --- !u!1001 &2130246490
 PrefabInstance:
   m_ObjectHideFlags: 0
