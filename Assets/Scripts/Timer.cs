@@ -6,7 +6,7 @@ public class Timer : MonoBehaviour
 {
     public TMP_Text timerText;
     public float timeLimit = 300.0f; // Time limit in seconds (adjust as needed)
-    public int trapsToDisable = 8; // Number of traps to disable for victory
+    public int trapsToDisable = 3; // Number of traps to disable for victory
 
     private float currentTime;
     public static int trapsDisabled = 0;

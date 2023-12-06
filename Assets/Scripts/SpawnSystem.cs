@@ -7,7 +7,8 @@ public class SpawnSystem : MonoBehaviour
     public GameObject CubePrefab; // Assign your Cube prefab in the Inspector
     public int maxCubes = 3; // Maximum number of cubes to spawn
     public float minDistanceBetweenCubes = 1.0f;
-
+    public bool IsKlieste = false;
+    private bool wasSpawned = false;
     private List<Transform> availableSpawnPoints = new List<Transform>();
     private List<GameObject> cubes = new List<GameObject>();
 
@@ -15,13 +16,27 @@ public class SpawnSystem : MonoBehaviour
     void Start()
     {
         InitializeSpawnPoints();
-        SpawnObjects(maxCubes);
+        if (!IsKlieste)
+        {
+            SpawnObjects(maxCubes);
+        }
     }
 
     // Update is called once per frame
     void Update()
     {
-        CheckAndRespawnCubes();
+        if (!IsKlieste)
+        {
+            CheckAndRespawnCubes();
+        }
+        else
+        {
+            if (Timer.trapsDisabled >= 3 && wasSpawned == false)
+            {
+                wasSpawned = true;
+                SpawnObjects(maxCubes);
+            }
+        }
     }
 
     private void InitializeSpawnPoints()
