@@ -63,6 +63,7 @@ public class FirstPersonController : MonoBehaviour
     public float walkSpeed = 5f;
     public float maxVelocityChange = 10f;
 
+  
     // Internal Variables
     private bool isWalking = false;
 
@@ -383,11 +384,13 @@ public class FirstPersonController : MonoBehaviour
             {
                 isWalking = true;
                 ChangeAnimationState(PLAYER_WALK);
+                animator.SetFloat("Speed", 0.2f);
             }
             else
             {
                 isWalking = false;
                 ChangeAnimationState(PLAYER_IDLE);
+                animator.SetFloat("Speed", 0);
             }
 
             // All movement calculations shile sprint is active
