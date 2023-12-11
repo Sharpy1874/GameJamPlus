@@ -70,7 +70,7 @@ MonoBehaviour:
   Path: ../../FMOD Studio/Rhino_Sound_System/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 638379204051703440
+  lastModified: 638379205495354173
   FileSizes:
   - Name: Desktop
     Value: 1866048
@@ -99,7 +99,7 @@ MonoBehaviour:
   - {fileID: -1540347690853868309}
   StringsBanks:
   - {fileID: 5038870729192805267}
-  cacheTime: 638379204051724543
+  cacheTime: 638379205495379702
   cacheVersion: 131609
 --- !u!114 &5038870729192805267
 MonoBehaviour:
@@ -116,7 +116,7 @@ MonoBehaviour:
   Path: ../../FMOD Studio/Rhino_Sound_System/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 638379204051724543
+  lastModified: 638379205495379702
   FileSizes:
   - Name: Desktop
     Value: 894
