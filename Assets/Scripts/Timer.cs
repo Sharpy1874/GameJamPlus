@@ -2,15 +2,18 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
+using UnityEngine.UI;
+
 public class Timer : MonoBehaviour
 {
     public TMP_Text timerText;
     public float timeLimit = 300.0f; // Time limit in seconds (adjust as needed)
     public int trapsToDisable = 3; // Number of traps to disable for victory
-
     private float currentTime;
     public static int trapsDisabled = 0;
     private bool isGameWon = false;
+    public RawImage rawImage;
+    public Texture NewTexture;
 
     // Start is called before the first frame update
     void Start()
@@ -68,7 +71,9 @@ public class Timer : MonoBehaviour
         if (isGameWon)
         {
             // Handle win (e.g., show win screen)
-            Debug.Log("You won!");
+            rawImage.texture = NewTexture;
+            timerText.text = "Find: 1 / 0";
+
         }
         else
         {

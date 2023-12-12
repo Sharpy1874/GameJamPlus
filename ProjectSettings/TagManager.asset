@@ -9,6 +9,7 @@ TagManager:
   - TrapTrigger
   - Timer
   - WireTrap
+  - MiniMap
   layers:
   - Default
   - TransparentFX
