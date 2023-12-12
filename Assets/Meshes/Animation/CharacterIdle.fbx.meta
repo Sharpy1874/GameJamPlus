@@ -57,7 +57,7 @@ ModelImporter:
       bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
       curves: []
       events:
-      - time: 0.17408907
+      - time: 0.008179982
         functionName: PlayFootstep
         data: 
         objectReferenceParameter: {fileID: 7400000, guid: d2e229baab2de2d49a956750ccf418ad, type: 2}
