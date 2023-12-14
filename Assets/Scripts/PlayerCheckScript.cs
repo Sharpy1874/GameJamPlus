@@ -9,6 +9,9 @@ public class PlayerCheckScript : MonoBehaviour
     public static bool HasBranch;
     public static bool HasKlieste;
     [SerializeField] GameObject PlayerBranch;
+    [SerializeField] GameObject pauseMenu;
+    [SerializeField] GameObject inGamePanel;
+
     void Start()
     {
         
@@ -26,7 +29,24 @@ public class PlayerCheckScript : MonoBehaviour
             PlayerBranch.SetActive(false);
         }
     }
+    private void FixedUpdate()
+    {
+        if (Input.GetKey(KeyCode.Escape))
+        {
+            Time.timeScale = 0f;
+            pauseMenu.SetActive(true);
+            inGamePanel.SetActive(false);
+            Cursor.lockState = CursorLockMode.Confined;
+        }
+    }
+    public void Resume()
+    {
+        inGamePanel.SetActive(true);
+        pauseMenu.SetActive(false);
+        Time.timeScale = 1f;
+        Cursor.lockState = CursorLockMode.Locked;
 
+    }
     private void OnTriggerEnter(Collider other)
     {
         if (other.CompareTag("WireTrap") && HasKlieste)
