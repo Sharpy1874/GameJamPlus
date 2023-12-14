@@ -7,17 +7,20 @@ using UnityEngine.UI;
 public class Timer : MonoBehaviour
 {
     public TMP_Text timerText;
-    public float timeLimit = 300.0f; // Time limit in seconds (adjust as needed)
+    public float timeLimit = 10.0f; // Time limit in seconds (adjust as needed)
     public int trapsToDisable = 3; // Number of traps to disable for victory
     private float currentTime;
     public static int trapsDisabled = 0;
     private bool isGameWon = false;
     public RawImage rawImage;
     public Texture NewTexture;
+    public GameObject inGamePanel;
+    public GameObject LoseScreen;
 
     // Start is called before the first frame update
     void Start()
     {
+        Time.timeScale = 1f;
         currentTime = timeLimit;
         UpdateTimerDisplay();
     }
@@ -33,6 +36,8 @@ public class Timer : MonoBehaviour
             {
                 // Handle game over (e.g., show lose screen)
                 GameOver(false);
+                inGamePanel.SetActive(false);
+                Cursor.lockState = CursorLockMode.Confined;
             }
 
             UpdateTimerDisplay();
@@ -65,7 +70,7 @@ public class Timer : MonoBehaviour
     }
 
     // Handle game over (win or lose)
-    void GameOver(bool win)
+    public void GameOver(bool win)
     {
         isGameWon = win;
         if (isGameWon)
@@ -77,6 +82,8 @@ public class Timer : MonoBehaviour
         }
         else
         {
+            LoseScreen.SetActive(true);
+            Time.timeScale = 0f;
             // Handle lose (e.g., show lose screen)
             Debug.Log("You lost!");
         }

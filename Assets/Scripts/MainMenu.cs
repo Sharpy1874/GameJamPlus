@@ -6,8 +6,7 @@ using UnityEngine.SceneManagement;
 
 public class MainMenu : MonoBehaviour
 {
-    public AudioSource Click;
-    public AudioClip ClickSound;
+
     public GameObject OptionsCanvas;
     public GameObject MainMenuCanvas;
     public void PlayGame()
@@ -15,9 +14,14 @@ public class MainMenu : MonoBehaviour
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1); ;
     }
 
-    public void OnClick()
+    public void RestartGame()
     {
-        Click.PlayOneShot(ClickSound);
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex); ;
+    }
+
+    public void MainMenuButton()
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex - 1); ;
     }
 
     public void QuitGame()

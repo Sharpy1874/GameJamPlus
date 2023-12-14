@@ -16,6 +16,7 @@ using UnityEngine.UI;
 
 public class FirstPersonController : MonoBehaviour
 {
+    public Timer Timer;
     private Rigidbody rb;
     //Player ANim states
     string _currentState;
@@ -207,6 +208,7 @@ public class FirstPersonController : MonoBehaviour
 
     private void Update()
     {
+
         #region Camera
 
         // Control camera movement
