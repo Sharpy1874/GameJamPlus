@@ -1,5 +1,59 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-4400283679716516157
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Traps
+  m_EditorClassIdentifier: 
+  Path: event:/Traps
+  Guid:
+    Data1: 1787563303
+    Data2: 1228608196
+    Data3: 1831595669
+    Data4: 1817169533
+  Banks:
+  - {fileID: -1540347690853868309}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 2000
+--- !u!114 &-3766607368764627827
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/UI_Click
+  m_EditorClassIdentifier: 
+  Path: event:/UI_Click
+  Guid:
+    Data1: -22553074
+    Data2: 1126772459
+    Data3: -542887237
+    Data4: 1997273172
+  Banks:
+  - {fileID: -1540347690853868309}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 100
 --- !u!114 &-3070144139781276716
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -55,6 +109,33 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 60048
+--- !u!114 &-1992829324122437618
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/WireTrap
+  m_EditorClassIdentifier: 
+  Path: event:/WireTrap
+  Guid:
+    Data1: 1200260385
+    Data2: 1205666616
+    Data3: -654810990
+    Data4: -91669447
+  Banks:
+  - {fileID: -1540347690853868309}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 2000
 --- !u!114 &-1540347690853868309
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -70,10 +151,10 @@ MonoBehaviour:
   Path: ../../FMOD Studio/Rhino_Sound_System/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 638380907236896923
+  lastModified: 638383289697479209
   FileSizes:
   - Name: Desktop
-    Value: 1886048
+    Value: 2015328
   Exists: 1
 --- !u!114 &11400000
 MonoBehaviour:
@@ -94,13 +175,49 @@ MonoBehaviour:
   - {fileID: -2878154738683535504}
   - {fileID: 7759296550243793096}
   - {fileID: 8652097102894605048}
+  - {fileID: -3766607368764627827}
+  - {fileID: 5828309652372317131}
+  - {fileID: -1992829324122437618}
+  - {fileID: -4400283679716516157}
+  - {fileID: 1716287223804741338}
+  - {fileID: 5792488864808764470}
+  - {fileID: 5500072501269901628}
+  - {fileID: 7274807624742452210}
+  - {fileID: 8447572016179836912}
   EditorParameters: []
   MasterBanks:
   - {fileID: -1540347690853868309}
   StringsBanks:
   - {fileID: 5038870729192805267}
-  cacheTime: 638380907236911952
+  cacheTime: 638383289697504558
   cacheVersion: 131609
+--- !u!114 &1716287223804741338
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/UI_Hover
+  m_EditorClassIdentifier: 
+  Path: event:/UI_Hover
+  Guid:
+    Data1: -1654972354
+    Data2: 1251603062
+    Data3: -1052857455
+    Data4: -1243308014
+  Banks:
+  - {fileID: -1540347690853868309}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 100
 --- !u!114 &5038870729192805267
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -116,11 +233,119 @@ MonoBehaviour:
   Path: ../../FMOD Studio/Rhino_Sound_System/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 638380907236911952
+  lastModified: 638383289697504558
   FileSizes:
   - Name: Desktop
-    Value: 894
+    Value: 1240
   Exists: 1
+--- !u!114 &5500072501269901628
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Miles
+  m_EditorClassIdentifier: 
+  Path: event:/Miles
+  Guid:
+    Data1: -1212926971
+    Data2: 1250561152
+    Data3: -1709505913
+    Data4: 821905517
+  Banks:
+  - {fileID: -1540347690853868309}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
+--- !u!114 &5792488864808764470
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Gazelle
+  m_EditorClassIdentifier: 
+  Path: event:/Gazelle
+  Guid:
+    Data1: 91749298
+    Data2: 1185158913
+    Data3: -1076040789
+    Data4: 135320643
+  Banks:
+  - {fileID: -1540347690853868309}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
+--- !u!114 &5828309652372317131
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Rhino
+  m_EditorClassIdentifier: 
+  Path: event:/Rhino
+  Guid:
+    Data1: -1524891374
+    Data2: 1286598325
+    Data3: 658469260
+    Data4: 244718660
+  Banks:
+  - {fileID: -1540347690853868309}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 4000
+--- !u!114 &7274807624742452210
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Poachers
+  m_EditorClassIdentifier: 
+  Path: event:/Poachers
+  Guid:
+    Data1: 1820676943
+    Data2: 1237031683
+    Data3: 1543516315
+    Data4: -2132335216
+  Banks:
+  - {fileID: -1540347690853868309}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
 --- !u!114 &7759296550243793096
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -148,6 +373,33 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 71568
+--- !u!114 &8447572016179836912
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Erwin
+  m_EditorClassIdentifier: 
+  Path: event:/Erwin
+  Guid:
+    Data1: -317192086
+    Data2: 1278957622
+    Data3: 407916968
+    Data4: 858898739
+  Banks:
+  - {fileID: -1540347690853868309}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 1280
 --- !u!114 &8652097102894605048
 MonoBehaviour:
   m_ObjectHideFlags: 0
