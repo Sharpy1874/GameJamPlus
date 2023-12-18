@@ -10,6 +10,7 @@ TagManager:
   - Timer
   - WireTrap
   - MiniMap
+  - Hint
   layers:
   - Default
   - TransparentFX
