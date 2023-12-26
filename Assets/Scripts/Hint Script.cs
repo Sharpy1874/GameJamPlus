@@ -9,7 +9,8 @@ public class HintController : MonoBehaviour
     [SerializeField] TMP_Text textChange;
     [SerializeField] GameObject text;
     private bool hintUsed = false;
-    
+
+  
     private void OnTriggerEnter(Collider other)
     {
         if (other.CompareTag("Player"))
@@ -31,6 +32,7 @@ public class HintController : MonoBehaviour
                 if (Input.GetKey(KeyCode.E))
                 {
                     StartCoroutine(ActivateHint());
+                    
                 }
             }
           
@@ -57,8 +59,10 @@ public class HintController : MonoBehaviour
             yield return null;
         }
         text.SetActive(false);
+        gameObject.SetActive(false);
         // Perform the action when the player successfully activates the hint
         // this is where FMOD implementation should be - MC talking about the specific hint
+       
         // make a variable that can be assigned in the editor
 
         Debug.Log("Hint activated!");
