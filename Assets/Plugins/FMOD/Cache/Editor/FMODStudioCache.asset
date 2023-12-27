@@ -151,11 +151,38 @@ MonoBehaviour:
   Path: ../../FMOD Studio/Rhino_Sound_System/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 638383289697479209
+  lastModified: 638392711531397046
   FileSizes:
   - Name: Desktop
-    Value: 2015328
+    Value: 2203200
   Exists: 1
+--- !u!114 &-1143726528206091369
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Poachers_Shooting
+  m_EditorClassIdentifier: 
+  Path: event:/Poachers_Shooting
+  Guid:
+    Data1: 1612448050
+    Data2: 1275414135
+    Data3: -1699626825
+    Data4: -1038606307
+  Banks:
+  - {fileID: -1540347690853868309}
+  IsStream: 1
+  Is3D: 1
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 12048
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -184,12 +211,13 @@ MonoBehaviour:
   - {fileID: 5500072501269901628}
   - {fileID: 7274807624742452210}
   - {fileID: 8447572016179836912}
+  - {fileID: -1143726528206091369}
   EditorParameters: []
   MasterBanks:
   - {fileID: -1540347690853868309}
   StringsBanks:
   - {fileID: 5038870729192805267}
-  cacheTime: 638383289697504558
+  cacheTime: 638392711531422660
   cacheVersion: 131609
 --- !u!114 &1716287223804741338
 MonoBehaviour:
@@ -233,10 +261,10 @@ MonoBehaviour:
   Path: ../../FMOD Studio/Rhino_Sound_System/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 638383289697504558
+  lastModified: 638392711531422660
   FileSizes:
   - Name: Desktop
-    Value: 1240
+    Value: 1292
   Exists: 1
 --- !u!114 &5500072501269901628
 MonoBehaviour:
