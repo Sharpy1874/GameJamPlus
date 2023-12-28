@@ -4954,7 +4954,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: db4c2d40e6499474abbf9a2d15d31e5b, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -219.36
+      value: -220.77
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: db4c2d40e6499474abbf9a2d15d31e5b, type: 3}
       propertyPath: m_LocalPosition.y
@@ -4962,7 +4962,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: db4c2d40e6499474abbf9a2d15d31e5b, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 20.109985
+      value: 21.52
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: db4c2d40e6499474abbf9a2d15d31e5b, type: 3}
       propertyPath: m_LocalRotation.w
@@ -5069,7 +5069,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  CollisionTag: 
+  CollisionTag: Player
   EventReference:
     Guid:
       Data1: -317192086
@@ -5078,16 +5078,16 @@ MonoBehaviour:
       Data4: 858898739
     Path: event:/Erwin
   Event: 
-  PlayEvent: 12
-  StopEvent: 0
+  PlayEvent: 7
+  StopEvent: 8
   AllowFadeout: 1
-  TriggerOnce: 0
+  TriggerOnce: 1
   Preload: 0
   AllowNonRigidbodyDoppler: 0
   Params: []
-  OverrideAttenuation: 1
-  OverrideMinDistance: 5
-  OverrideMaxDistance: 5
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
 --- !u!1001 &244029474
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5293,6 +5293,12 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 3555387403485698717, guid: e95e061153a79cb4195a0e822885f9f8, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1570486515}
+    - targetCorrespondingSourceObject: {fileID: 3555387403485698717, guid: e95e061153a79cb4195a0e822885f9f8, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1570486516}
+    - targetCorrespondingSourceObject: {fileID: 3555387403485698717, guid: e95e061153a79cb4195a0e822885f9f8, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1570486519}
   m_SourcePrefab: {fileID: 100100000, guid: e95e061153a79cb4195a0e822885f9f8, type: 3}
 --- !u!4 &248107363 stripped
 Transform:
@@ -8426,6 +8432,7 @@ GameObject:
   - component: {fileID: 390112648}
   - component: {fileID: 390112647}
   - component: {fileID: 390112652}
+  - component: {fileID: 390112653}
   m_Layer: 0
   m_Name: Hint_Cage01
   m_TagString: Untagged
@@ -8477,7 +8484,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  CollisionTag: 
+  CollisionTag: Player
   EventReference:
     Guid:
       Data1: -1524891374
@@ -8486,8 +8493,8 @@ MonoBehaviour:
       Data4: 244718660
     Path: event:/Rhino
   Event: 
-  PlayEvent: 12
-  StopEvent: 0
+  PlayEvent: 3
+  StopEvent: 4
   AllowFadeout: 1
   TriggerOnce: 1
   Preload: 0
@@ -8569,6 +8576,18 @@ CapsuleCollider:
   m_Height: 1
   m_Direction: 1
   m_Center: {x: 0, y: 0.0000019073486, z: 0.000015258789}
+--- !u!114 &390112653
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 390112645}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e7a37d4a990cf99429a348fb55f5eb04, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &392733846
 GameObject:
   m_ObjectHideFlags: 0
@@ -21446,15 +21465,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4301717871961465938, guid: b8bc3d41d2bef384baebe2f3b44b0beb, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -14.6
+      value: -159.95
       objectReference: {fileID: 0}
     - target: {fileID: 4301717871961465938, guid: b8bc3d41d2bef384baebe2f3b44b0beb, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -92
+      value: -94.69
       objectReference: {fileID: 0}
     - target: {fileID: 4301717871961465938, guid: b8bc3d41d2bef384baebe2f3b44b0beb, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 112.9
+      value: 292.9
       objectReference: {fileID: 0}
     - target: {fileID: 4301717871961465938, guid: b8bc3d41d2bef384baebe2f3b44b0beb, type: 3}
       propertyPath: m_LocalRotation.w
@@ -29927,8 +29946,8 @@ MonoBehaviour:
       Data4: 858898739
     Path: event:/Erwin
   Event: 
-  PlayEvent: 12
-  StopEvent: 0
+  PlayEvent: 7
+  StopEvent: 8
   AllowFadeout: 1
   TriggerOnce: 1
   Preload: 0
@@ -29960,6 +29979,40 @@ CapsuleCollider:
   m_Height: 6
   m_Direction: 1
   m_Center: {x: 0, y: 2.2878876, z: 0}
+--- !u!114 &1570486516
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1570486503}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e7a37d4a990cf99429a348fb55f5eb04, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!64 &1570486519
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1570486503}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 5941405521646463149, guid: 5234402a50377a447acf0cf91807fef9, type: 3}
 --- !u!1001 &1571169540
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -34302,7 +34355,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  CollisionTag: 
+  CollisionTag: Player
   EventReference:
     Guid:
       Data1: -1524891374
@@ -34311,8 +34364,8 @@ MonoBehaviour:
       Data4: 244718660
     Path: event:/Rhino
   Event: 
-  PlayEvent: 12
-  StopEvent: 0
+  PlayEvent: 3
+  StopEvent: 4
   AllowFadeout: 1
   TriggerOnce: 1
   Preload: 0
@@ -36363,6 +36416,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: f7ca1be13bc3dcd40a8270cd7832cee0, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1853385615}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: f7ca1be13bc3dcd40a8270cd7832cee0, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1853385617}
   m_SourcePrefab: {fileID: 100100000, guid: f7ca1be13bc3dcd40a8270cd7832cee0, type: 3}
 --- !u!4 &1853385613 stripped
 Transform:
@@ -36398,7 +36454,7 @@ MonoBehaviour:
   PlayEvent: 12
   StopEvent: 0
   AllowFadeout: 1
-  TriggerOnce: 0
+  TriggerOnce: 1
   Preload: 0
   AllowNonRigidbodyDoppler: 0
   Params: []
@@ -36421,6 +36477,18 @@ MonoBehaviour:
   cooldownTime: 10
   textChange: {fileID: 0}
   text: {fileID: 0}
+--- !u!114 &1853385617
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1853385614}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e7a37d4a990cf99429a348fb55f5eb04, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1857244135
 PrefabInstance:
   m_ObjectHideFlags: 0
