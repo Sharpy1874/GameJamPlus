@@ -1054,7 +1054,7 @@ MonoBehaviour:
       Data2: 1126772459
       Data3: -542887237
       Data4: 1997273172
-    Path: event:/UI_Click
+    Path: event:/UI/UI_Click
   Event: 
   PlayEvent: 20
   StopEvent: 19
@@ -1085,7 +1085,7 @@ MonoBehaviour:
       Data2: 1251603062
       Data3: -1052857455
       Data4: -1243308014
-    Path: event:/UI_Hover
+    Path: event:/UI/UI_Hover
   Event: 
   PlayEvent: 17
   StopEvent: 18
@@ -1750,7 +1750,7 @@ MonoBehaviour:
       Data2: 1126772459
       Data3: -542887237
       Data4: 1997273172
-    Path: event:/UI_Click
+    Path: event:/UI/UI_Click
   Event: 
   PlayEvent: 20
   StopEvent: 19
@@ -1781,7 +1781,7 @@ MonoBehaviour:
       Data2: 1251603062
       Data3: -1052857455
       Data4: -1243308014
-    Path: event:/UI_Hover
+    Path: event:/UI/UI_Hover
   Event: 
   PlayEvent: 17
   StopEvent: 18
@@ -2253,7 +2253,7 @@ MonoBehaviour:
       Data2: 1126772459
       Data3: -542887237
       Data4: 1997273172
-    Path: event:/UI_Click
+    Path: event:/UI/UI_Click
   Event: 
   PlayEvent: 20
   StopEvent: 19
@@ -2284,7 +2284,7 @@ MonoBehaviour:
       Data2: 1251603062
       Data3: -1052857455
       Data4: -1243308014
-    Path: event:/UI_Hover
+    Path: event:/UI/UI_Hover
   Event: 
   PlayEvent: 17
   StopEvent: 18
@@ -2450,7 +2450,7 @@ MonoBehaviour:
       Data2: 1126772459
       Data3: -542887237
       Data4: 1997273172
-    Path: event:/UI_Click
+    Path: event:/UI/UI_Click
   Event: 
   PlayEvent: 20
   StopEvent: 19
@@ -2481,7 +2481,7 @@ MonoBehaviour:
       Data2: 1251603062
       Data3: -1052857455
       Data4: -1243308014
-    Path: event:/UI_Hover
+    Path: event:/UI/UI_Hover
   Event: 
   PlayEvent: 17
   StopEvent: 18

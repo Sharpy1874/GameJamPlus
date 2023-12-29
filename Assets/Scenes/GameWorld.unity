@@ -472,7 +472,7 @@ MonoBehaviour:
       Data2: 1113491263
       Data3: -428533600
       Data4: -1652789043
-    Path: event:/Ambience
+    Path: event:/Environment/Ambience
   Event: 
   PlayEvent: 1
   StopEvent: 2
@@ -482,8 +482,8 @@ MonoBehaviour:
   AllowNonRigidbodyDoppler: 0
   Params: []
   OverrideAttenuation: 1
-  OverrideMinDistance: 350
-  OverrideMaxDistance: 350
+  OverrideMinDistance: 20
+  OverrideMaxDistance: 380
 --- !u!4 &26026028
 Transform:
   m_ObjectHideFlags: 0
@@ -493,7 +493,7 @@ Transform:
   m_GameObject: {fileID: 26026026}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 135.7, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -899,7 +899,7 @@ MonoBehaviour:
       Data2: 1286598325
       Data3: 658469260
       Data4: 244718660
-    Path: event:/Rhino
+    Path: event:/Game_Objects/Rhino
   Event: 
   PlayEvent: 12
   StopEvent: 0
@@ -2912,7 +2912,7 @@ MonoBehaviour:
       Data2: 1156035565
       Data3: -868604797
       Data4: -1068074609
-    Path: event:/Lake
+    Path: event:/Environment/Lake
   Event: 
   PlayEvent: 1
   StopEvent: 2
@@ -2922,8 +2922,8 @@ MonoBehaviour:
   AllowNonRigidbodyDoppler: 0
   Params: []
   OverrideAttenuation: 1
-  OverrideMinDistance: 45
-  OverrideMaxDistance: 50
+  OverrideMinDistance: 20
+  OverrideMaxDistance: 20
 --- !u!4 &140066288
 Transform:
   m_ObjectHideFlags: 0
@@ -2933,7 +2933,7 @@ Transform:
   m_GameObject: {fileID: 140066286}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 101.987564, y: -76.43, z: 80.11902}
+  m_LocalPosition: {x: 101.3, y: 20, z: -105.9}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -4812,7 +4812,7 @@ MonoBehaviour:
       Data2: 1126772459
       Data3: -542887237
       Data4: 1997273172
-    Path: event:/UI_Click
+    Path: event:/UI/UI_Click
   Event: 
   PlayEvent: 17
   StopEvent: 18
@@ -4843,7 +4843,7 @@ MonoBehaviour:
       Data2: 1251603062
       Data3: -1052857455
       Data4: -1243308014
-    Path: event:/UI_Hover
+    Path: event:/UI/UI_Hover
   Event: 
   PlayEvent: 17
   StopEvent: 18
@@ -5076,7 +5076,7 @@ MonoBehaviour:
       Data2: 1278957622
       Data3: 407916968
       Data4: 858898739
-    Path: event:/Erwin
+    Path: event:/Dialogue_System/Erwin
   Event: 
   PlayEvent: 7
   StopEvent: 8
@@ -6994,7 +6994,7 @@ MonoBehaviour:
       Data2: 1126772459
       Data3: -542887237
       Data4: 1997273172
-    Path: event:/UI_Click
+    Path: event:/UI/UI_Click
   Event: 
   PlayEvent: 20
   StopEvent: 19
@@ -7025,7 +7025,7 @@ MonoBehaviour:
       Data2: 1251603062
       Data3: -1052857455
       Data4: -1243308014
-    Path: event:/UI_Hover
+    Path: event:/UI/UI_Hover
   Event: 
   PlayEvent: 17
   StopEvent: 18
@@ -8265,7 +8265,7 @@ MonoBehaviour:
       Data2: 1275414135
       Data3: -1699626825
       Data4: -1038606307
-    Path: event:/Poachers_Shooting
+    Path: event:/Environment/Poachers_Shooting
   Event: 
   PlayEvent: 3
   StopEvent: 4
@@ -8491,7 +8491,7 @@ MonoBehaviour:
       Data2: 1286598325
       Data3: 658469260
       Data4: 244718660
-    Path: event:/Rhino
+    Path: event:/Game_Objects/Rhino
   Event: 
   PlayEvent: 3
   StopEvent: 4
@@ -11718,7 +11718,7 @@ MonoBehaviour:
       Data2: 1156035565
       Data3: -868604797
       Data4: -1068074609
-    Path: event:/Lake
+    Path: event:/Environment/Lake
   Event: 
   PlayEvent: 1
   StopEvent: 2
@@ -11728,7 +11728,7 @@ MonoBehaviour:
   AllowNonRigidbodyDoppler: 0
   Params: []
   OverrideAttenuation: 1
-  OverrideMinDistance: 15
+  OverrideMinDistance: 20
   OverrideMaxDistance: 20
 --- !u!4 &570496476
 Transform:
@@ -11739,7 +11739,7 @@ Transform:
   m_GameObject: {fileID: 570496474}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 181.3, y: -78.1, z: -89.5}
+  m_LocalPosition: {x: 222.9, y: 16, z: -92.9}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -13557,7 +13557,7 @@ MonoBehaviour:
       Data2: 1278957622
       Data3: 407916968
       Data4: 858898739
-    Path: event:/Erwin
+    Path: event:/Dialogue_System/Erwin
   Event: 
   PlayEvent: 12
   StopEvent: 0
@@ -15009,9 +15009,15 @@ Transform:
   m_Children:
   - {fileID: 26026028}
   - {fileID: 1301523489}
+  - {fileID: 1845815497}
+  - {fileID: 1969571797}
+  - {fileID: 1855566635}
+  - {fileID: 1867729159}
+  - {fileID: 990990183}
   - {fileID: 570496476}
   - {fileID: 1062389745}
   - {fileID: 140066288}
+  - {fileID: 867459067}
   m_Father: {fileID: 478144573}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &771248216
@@ -16147,7 +16153,7 @@ MonoBehaviour:
       Data2: 1275414135
       Data3: -1699626825
       Data4: -1038606307
-    Path: event:/Poachers_Shooting
+    Path: event:/Environment/Poachers_Shooting
   Event: 
   PlayEvent: 3
   StopEvent: 4
@@ -16394,7 +16400,7 @@ MonoBehaviour:
       Data2: 1278957622
       Data3: 407916968
       Data4: 858898739
-    Path: event:/Erwin
+    Path: event:/Dialogue_System/Erwin
   Event: 
   PlayEvent: 3
   StopEvent: 4
@@ -16404,8 +16410,8 @@ MonoBehaviour:
   AllowNonRigidbodyDoppler: 0
   Params: []
   OverrideAttenuation: 1
-  OverrideMinDistance: 12
-  OverrideMaxDistance: 12
+  OverrideMinDistance: 5
+  OverrideMaxDistance: 5
 --- !u!65 &816229760
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -17511,6 +17517,69 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 862564199}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &867459066
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 867459067}
+  - component: {fileID: 867459068}
+  m_Layer: 0
+  m_Name: Ambience_Lake (4)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &867459067
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 867459066}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 146.7, y: 16.8, z: -105.9}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 761914792}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &867459068
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 867459066}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: 2077899522
+      Data2: 1156035565
+      Data3: -868604797
+      Data4: -1068074609
+    Path: event:/Environment/Lake
+  Event: 
+  PlayEvent: 1
+  StopEvent: 2
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  AllowNonRigidbodyDoppler: 0
+  Params: []
+  OverrideAttenuation: 1
+  OverrideMinDistance: 20
+  OverrideMaxDistance: 20
 --- !u!1001 &868785466
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -18915,6 +18984,69 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 8415304551286992157, guid: 1adbdd5ea9a76d247a3f262569b3e059, type: 3}
   m_PrefabInstance: {fileID: 987593960}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &990990182
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 990990183}
+  - component: {fileID: 990990184}
+  m_Layer: 0
+  m_Name: Ambience_Lake (9)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &990990183
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 990990182}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 145.2, y: 19.2, z: 104.8}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 761914792}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &990990184
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 990990182}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: 2077899522
+      Data2: 1156035565
+      Data3: -868604797
+      Data4: -1068074609
+    Path: event:/Environment/Lake
+  Event: 
+  PlayEvent: 1
+  StopEvent: 2
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  AllowNonRigidbodyDoppler: 0
+  Params: []
+  OverrideAttenuation: 1
+  OverrideMinDistance: 10
+  OverrideMaxDistance: 15
 --- !u!1 &996516656
 GameObject:
   m_ObjectHideFlags: 0
@@ -19069,7 +19201,7 @@ MonoBehaviour:
       Data2: 1126772459
       Data3: -542887237
       Data4: 1997273172
-    Path: event:/UI_Click
+    Path: event:/UI/UI_Click
   Event: 
   PlayEvent: 20
   StopEvent: 19
@@ -19100,7 +19232,7 @@ MonoBehaviour:
       Data2: 1251603062
       Data3: -1052857455
       Data4: -1243308014
-    Path: event:/UI_Hover
+    Path: event:/UI/UI_Hover
   Event: 
   PlayEvent: 17
   StopEvent: 18
@@ -20277,7 +20409,7 @@ MonoBehaviour:
       Data2: 1156035565
       Data3: -868604797
       Data4: -1068074609
-    Path: event:/Lake
+    Path: event:/Environment/Lake
   Event: 
   PlayEvent: 1
   StopEvent: 2
@@ -20286,9 +20418,9 @@ MonoBehaviour:
   Preload: 0
   AllowNonRigidbodyDoppler: 0
   Params: []
-  OverrideAttenuation: 0
-  OverrideMinDistance: 1
-  OverrideMaxDistance: 20
+  OverrideAttenuation: 1
+  OverrideMinDistance: 10
+  OverrideMaxDistance: 10
 --- !u!4 &1062389745
 Transform:
   m_ObjectHideFlags: 0
@@ -20298,7 +20430,7 @@ Transform:
   m_GameObject: {fileID: 1062389743}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 71.487564, y: -76.43, z: -107.98098}
+  m_LocalPosition: {x: 70.3, y: 15.7, z: -98.5}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -21473,7 +21605,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4301717871961465938, guid: b8bc3d41d2bef384baebe2f3b44b0beb, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 292.9
+      value: 79
       objectReference: {fileID: 0}
     - target: {fileID: 4301717871961465938, guid: b8bc3d41d2bef384baebe2f3b44b0beb, type: 3}
       propertyPath: m_LocalRotation.w
@@ -21547,7 +21679,7 @@ PrefabInstance:
       addedObject: {fileID: 2108963506}
     - targetCorrespondingSourceObject: {fileID: 6995136182952773140, guid: b8bc3d41d2bef384baebe2f3b44b0beb, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 2108963513}
+      addedObject: {fileID: 2108963507}
     - targetCorrespondingSourceObject: {fileID: 2958023527138149930, guid: b8bc3d41d2bef384baebe2f3b44b0beb, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1200254278}
@@ -22281,7 +22413,7 @@ MonoBehaviour:
       Data2: 1126772459
       Data3: -542887237
       Data4: 1997273172
-    Path: event:/UI_Click
+    Path: event:/UI/UI_Click
   Event: 
   PlayEvent: 20
   StopEvent: 19
@@ -22312,7 +22444,7 @@ MonoBehaviour:
       Data2: 1251603062
       Data3: -1052857455
       Data4: -1243308014
-    Path: event:/UI_Hover
+    Path: event:/UI/UI_Hover
   Event: 
   PlayEvent: 17
   StopEvent: 18
@@ -24257,7 +24389,7 @@ MonoBehaviour:
       Data2: 1286598325
       Data3: 658469260
       Data4: 244718660
-    Path: event:/Rhino
+    Path: event:/Game_Objects/Rhino
   Event: 
   PlayEvent: 12
   StopEvent: 0
@@ -24795,7 +24927,7 @@ MonoBehaviour:
       Data2: 1156035565
       Data3: -868604797
       Data4: -1068074609
-    Path: event:/Lake
+    Path: event:/Environment/Lake
   Event: 
   PlayEvent: 1
   StopEvent: 2
@@ -24805,8 +24937,8 @@ MonoBehaviour:
   AllowNonRigidbodyDoppler: 0
   Params: []
   OverrideAttenuation: 1
-  OverrideMinDistance: 30
-  OverrideMaxDistance: 40
+  OverrideMinDistance: 20
+  OverrideMaxDistance: 25
 --- !u!4 &1301523489
 Transform:
   m_ObjectHideFlags: 0
@@ -24816,7 +24948,7 @@ Transform:
   m_GameObject: {fileID: 1301523487}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 179.48756, y: -80.1, z: 170.51901}
+  m_LocalPosition: {x: 217.1, y: 19.2, z: 172.5}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -25342,7 +25474,7 @@ MonoBehaviour:
       Data2: 1278957622
       Data3: 407916968
       Data4: 858898739
-    Path: event:/Erwin
+    Path: event:/Dialogue_System/Erwin
   Event: 
   PlayEvent: 12
   StopEvent: 0
@@ -25351,8 +25483,8 @@ MonoBehaviour:
   Preload: 0
   AllowNonRigidbodyDoppler: 0
   Params: []
-  OverrideAttenuation: 1
-  OverrideMinDistance: 20
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
   OverrideMaxDistance: 20
 --- !u!1 &1336210023
 GameObject:
@@ -29944,7 +30076,7 @@ MonoBehaviour:
       Data2: 1278957622
       Data3: 407916968
       Data4: 858898739
-    Path: event:/Erwin
+    Path: event:/Dialogue_System/Erwin
   Event: 
   PlayEvent: 7
   StopEvent: 8
@@ -34362,7 +34494,7 @@ MonoBehaviour:
       Data2: 1286598325
       Data3: 658469260
       Data4: 244718660
-    Path: event:/Rhino
+    Path: event:/Game_Objects/Rhino
   Event: 
   PlayEvent: 3
   StopEvent: 4
@@ -36085,6 +36217,69 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 7421292995810682299, guid: 874eef576c7c52d40beefecc37aae6b0, type: 3}
   m_PrefabInstance: {fileID: 1844994522}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1845815496
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1845815497}
+  - component: {fileID: 1845815498}
+  m_Layer: 0
+  m_Name: Ambience_Lake (5)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1845815497
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1845815496}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 221.4, y: 19.2, z: -91.8}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 761914792}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1845815498
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1845815496}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: 2077899522
+      Data2: 1156035565
+      Data3: -868604797
+      Data4: -1068074609
+    Path: event:/Environment/Lake
+  Event: 
+  PlayEvent: 1
+  StopEvent: 2
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  AllowNonRigidbodyDoppler: 0
+  Params: []
+  OverrideAttenuation: 1
+  OverrideMinDistance: 15
+  OverrideMaxDistance: 20
 --- !u!1 &1846580549
 GameObject:
   m_ObjectHideFlags: 0
@@ -36449,7 +36644,7 @@ MonoBehaviour:
       Data2: 1286598325
       Data3: 658469260
       Data4: 244718660
-    Path: event:/Rhino
+    Path: event:/Game_Objects/Rhino
   Event: 
   PlayEvent: 12
   StopEvent: 0
@@ -36489,6 +36684,69 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e7a37d4a990cf99429a348fb55f5eb04, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &1855566634
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1855566635}
+  - component: {fileID: 1855566636}
+  m_Layer: 0
+  m_Name: Ambience_Lake (7)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1855566635
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1855566634}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 125.5, y: 19.2, z: 71.6}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 761914792}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1855566636
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1855566634}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: 2077899522
+      Data2: 1156035565
+      Data3: -868604797
+      Data4: -1068074609
+    Path: event:/Environment/Lake
+  Event: 
+  PlayEvent: 1
+  StopEvent: 2
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  AllowNonRigidbodyDoppler: 0
+  Params: []
+  OverrideAttenuation: 1
+  OverrideMinDistance: 15
+  OverrideMaxDistance: 20
 --- !u!1001 &1857244135
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -36796,6 +37054,69 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0889dd535727b7f42876e5f16aa700db, type: 3}
+--- !u!1 &1867729158
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1867729159}
+  - component: {fileID: 1867729160}
+  m_Layer: 0
+  m_Name: Ambience_Lake (8)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1867729159
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1867729158}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 100.8, y: 19.2, z: 76.1}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 761914792}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1867729160
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1867729158}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: 2077899522
+      Data2: 1156035565
+      Data3: -868604797
+      Data4: -1068074609
+    Path: event:/Environment/Lake
+  Event: 
+  PlayEvent: 1
+  StopEvent: 2
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  AllowNonRigidbodyDoppler: 0
+  Params: []
+  OverrideAttenuation: 1
+  OverrideMinDistance: 10
+  OverrideMaxDistance: 15
 --- !u!1001 &1869162639
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -37896,7 +38217,7 @@ MonoBehaviour:
       Data2: 1126772459
       Data3: -542887237
       Data4: 1997273172
-    Path: event:/UI_Click
+    Path: event:/UI/UI_Click
   Event: 
   PlayEvent: 20
   StopEvent: 19
@@ -37927,7 +38248,7 @@ MonoBehaviour:
       Data2: 1251603062
       Data3: -1052857455
       Data4: -1243308014
-    Path: event:/UI_Hover
+    Path: event:/UI/UI_Hover
   Event: 
   PlayEvent: 17
   StopEvent: 18
@@ -38851,6 +39172,69 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1955725275}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &1969571796
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1969571797}
+  - component: {fileID: 1969571798}
+  m_Layer: 0
+  m_Name: Ambience_Lake (6)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1969571797
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1969571796}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 169.9, y: 19.2, z: 71.6}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 761914792}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1969571798
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1969571796}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: 2077899522
+      Data2: 1156035565
+      Data3: -868604797
+      Data4: -1068074609
+    Path: event:/Environment/Lake
+  Event: 
+  PlayEvent: 1
+  StopEvent: 2
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  AllowNonRigidbodyDoppler: 0
+  Params: []
+  OverrideAttenuation: 1
+  OverrideMinDistance: 15
+  OverrideMaxDistance: 20
 --- !u!1001 &1976455290
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -41290,7 +41674,7 @@ MonoBehaviour:
       Data2: 1126772459
       Data3: -542887237
       Data4: 1997273172
-    Path: event:/UI_Click
+    Path: event:/UI/UI_Click
   Event: 
   PlayEvent: 20
   StopEvent: 19
@@ -41321,7 +41705,7 @@ MonoBehaviour:
       Data2: 1251603062
       Data3: -1052857455
       Data4: -1243308014
-    Path: event:/UI_Hover
+    Path: event:/UI/UI_Hover
   Event: 
   PlayEvent: 17
   StopEvent: 18
@@ -41439,7 +41823,7 @@ MonoBehaviour:
       Data2: 1278957622
       Data3: 407916968
       Data4: 858898739
-    Path: event:/Erwin
+    Path: event:/Dialogue_System/Erwin
   Event: 
   PlayEvent: 12
   StopEvent: 0
@@ -41449,8 +41833,8 @@ MonoBehaviour:
   AllowNonRigidbodyDoppler: 0
   Params: []
   OverrideAttenuation: 1
-  OverrideMinDistance: 15
-  OverrideMaxDistance: 15
+  OverrideMinDistance: 5
+  OverrideMaxDistance: 5
 --- !u!1 &2087843020
 GameObject:
   m_ObjectHideFlags: 0
@@ -41862,7 +42246,7 @@ MonoBehaviour:
   PlayerBranch: {fileID: 368598508}
   pauseMenu: {fileID: 1831624630}
   inGamePanel: {fileID: 833252669}
---- !u!114 &2108963513
+--- !u!114 &2108963507
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -41874,7 +42258,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 86c6556701af9e04380698b89f691b6e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  attenuationObject: {fileID: 478144572}
+  attenuationObject: {fileID: 0}
 --- !u!1 &2122001394
 GameObject:
   m_ObjectHideFlags: 0

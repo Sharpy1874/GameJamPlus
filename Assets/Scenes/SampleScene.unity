@@ -554,7 +554,7 @@ MonoBehaviour:
       Data2: 1286598325
       Data3: 658469260
       Data4: 244718660
-    Path: event:/Rhino
+    Path: event:/Game_Objects/Rhino
   Event: 
   PlayEvent: 12
   StopEvent: 0
@@ -780,7 +780,7 @@ MonoBehaviour:
       Data2: 1286598325
       Data3: 658469260
       Data4: 244718660
-    Path: event:/Rhino
+    Path: event:/Game_Objects/Rhino
   Event: 
   PlayEvent: 12
   StopEvent: 0

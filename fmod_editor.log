@@ -7,208 +7,17 @@
 [LOG] OutputWASAPI::init                       : Output buffer size: 4096 samples, latency: 0.00ms, period: 10.00ms, DSP buffer: 1024 * 4
 [LOG] Thread::initThread                       : Init FMOD stream thread. Affinity: 0x4000000000000003, Priority: 0xFFFF7FFB, Stack Size: 98304, Semaphore: No, Sleep Time: 10, Looping: Yes.
 [LOG] Thread::initThread                       : Init FMOD mixer thread. Affinity: 0x4000000000000001, Priority: 0xFFFF7FFA, Stack Size: 81920, Semaphore: No, Sleep Time: 0, Looping: Yes.
-[LOG] AsyncManager::init                       : manager 0000020401A4DA18 isAsync 0 updatePeriod 0.02
+[LOG] AsyncManager::init                       : manager 000001E16A303E38 isAsync 0 updatePeriod 0.02
 [LOG] AsyncManager::init                       : done
 [LOG] PlaybackSystem::init                     : 
 [LOG] Thread::initThread                       : Init FMOD Studio sample load thread. Affinity: 0x4000000000000003, Priority: 0xFFFF7FFD, Stack Size: 98304, Semaphore: No, Sleep Time: 1, Looping: No.
 [LOG] PlaybackSystem::init                     : done
 [LOG] Thread::initThread                       : Init FMOD Studio bank load thread. Affinity: 0x4000000000000003, Priority: 0xFFFF7FFD, Stack Size: 98304, Semaphore: No, Sleep Time: 1, Looping: No.
 [LOG] Manager::init                            : done.
-[LOG] SystemI::createSound                     : filename = ../../FMOD Studio/Rhino_Sound_System/Build/Desktop/Master.bank : mode 02010082
-[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
-[LOG] AsyncThread::add                         : add sound to async queue : soundi = 000002040EFD3DD8, queue head = 00000203F6ED2FF8, queue count = 0
-[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000002040EFD3DD8
-[LOG] SystemI::createSoundInternal             :     Create name='../../FMOD Studio/Rhino_Sound_System/Build/Desktop/Master.bank', mode=0x02010082
-[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
-[LOG] SystemI::createSoundInternal             :     exinfo->length             = 2174368
-[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 28832
-[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
-[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 00000202E4A9ECC0
-[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
-[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
-[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
-[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='Audio_Ambience', format=5, channels=2, frequency=48000, lengthbytes=754240, lengthpcm=2882304, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.073669.
-[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000002040EFD3DD8
-[LOG] SoundI::release                          : Audio_Ambience (00000200A48B29A8)
-[LOG] SoundI::release                          :     Audio_Ambience (000002039C78DD18)
-[LOG] SoundI::release                          :     Audio_Ambience (00000202B4B8D098)
-[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
-[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
-[LOG] SystemI::createSoundInternal             : exinfo->length             = 2174368
-[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 28832
-[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
-[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 000000EC16BEEFC8
-[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
-[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
-[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FFC2C2F3F70
-[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FFC2C2F3F30
-[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FFC2C2F4050
-[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FFC2C2F4110
-[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 0000020411F64EC8
-[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
-[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
-[LOG] SystemI::createSoundInternal             : Sample 0/1: name='Audio_Rhino_Step', format=5, channels=2, frequency=48000, lengthbytes=6464, lengthpcm=27648, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.768646.
-[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
-[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
-[LOG] SystemI::createSoundInternal             : exinfo->length             = 2174368
-[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 28832
-[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
-[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 000000EC16BEEFC8
-[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
-[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
-[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FFC2C2F3F70
-[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FFC2C2F3F30
-[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FFC2C2F4050
-[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FFC2C2F4110
-[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 0000020411F64EC8
-[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
-[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
-[LOG] SystemI::createSoundInternal             : Sample 0/1: name='Audio_Rhino_Trap_2', format=5, channels=2, frequency=48000, lengthbytes=7072, lengthpcm=46080, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.057465.
-[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
-[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
-[LOG] SystemI::createSoundInternal             : exinfo->length             = 2174368
-[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 28832
-[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
-[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 000000EC16BEEFC8
-[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
-[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
-[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FFC2C2F3F70
-[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FFC2C2F3F30
-[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FFC2C2F4050
-[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FFC2C2F4110
-[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 0000020411F64EC8
-[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
-[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
-[LOG] SystemI::createSoundInternal             : Sample 0/1: name='Audio_Rhino_3', format=5, channels=2, frequency=48000, lengthbytes=14208, lengthpcm=71424, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.391571.
-[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
-[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
-[LOG] SystemI::createSoundInternal             : exinfo->length             = 2174368
-[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 28832
-[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
-[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 000000EC16BEEFC8
-[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
-[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
-[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FFC2C2F3F70
-[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FFC2C2F3F30
-[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FFC2C2F4050
-[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FFC2C2F4110
-[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 0000020411F64EC8
-[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
-[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
-[LOG] SystemI::createSoundInternal             : Sample 0/1: name='05', format=5, channels=1, frequency=48000, lengthbytes=12288, lengthpcm=61440, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.561859.
-[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
-[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
-[LOG] SystemI::createSoundInternal             : exinfo->length             = 2174368
-[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 28832
-[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
-[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 000000EC16BEEFC8
-[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
-[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
-[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FFC2C2F3F70
-[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FFC2C2F3F30
-[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FFC2C2F4050
-[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FFC2C2F4110
-[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 0000020411F64EC8
-[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
-[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
-[LOG] SystemI::createSoundInternal             : Sample 0/1: name='Audio_Rhino_1', format=5, channels=2, frequency=48000, lengthbytes=11392, lengthpcm=56448, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.505585.
-[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
-[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
-[LOG] SystemI::createSoundInternal             : exinfo->length             = 2174368
-[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 28832
-[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
-[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 000000EC16BEEFC8
-[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
-[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
-[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FFC2C2F3F70
-[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FFC2C2F3F30
-[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FFC2C2F4050
-[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FFC2C2F4110
-[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 0000020411F64EC8
-[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
-[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
-[LOG] SystemI::createSoundInternal             : Sample 0/1: name='Audio_Rhino_4', format=5, channels=2, frequency=48000, lengthbytes=23936, lengthpcm=125568, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.117767.
-[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
-[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
-[LOG] SystemI::createSoundInternal             : exinfo->length             = 2174368
-[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 28832
-[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
-[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 000000EC16BEEFC8
-[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
-[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
-[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FFC2C2F3F70
-[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FFC2C2F3F30
-[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FFC2C2F4050
-[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FFC2C2F4110
-[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 0000020411F64EC8
-[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
-[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
-[LOG] SystemI::createSoundInternal             : Sample 0/1: name='Audio_Rhino_2', format=5, channels=2, frequency=48000, lengthbytes=8864, lengthpcm=44928, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.195435.
-[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
-[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
-[LOG] SystemI::createSoundInternal             : exinfo->length             = 2174368
-[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 28832
-[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
-[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 000000EC16BEEFC8
-[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
-[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
-[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FFC2C2F3F70
-[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FFC2C2F3F30
-[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FFC2C2F4050
-[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FFC2C2F4110
-[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 0000020411F64EC8
-[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
-[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
-[LOG] SystemI::createSoundInternal             : Sample 0/1: name='Audio_Rhino_Trap_1', format=5, channels=2, frequency=48000, lengthbytes=8768, lengthpcm=46080, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.106110.
-[LOG] SoundI::release                          : Enviroment_lake_ambient_loop (0000020412380108)
-[LOG] SoundI::release                          :     Enviroment_lake_ambient_loop (000002039C789C18)
-[LOG] SoundI::release                          :     Enviroment_lake_ambient_loop (0000020379D21AC8)
-[LOG] SoundI::release                          : Enviroment_lake_ambient_loop (00000200A405A108)
-[LOG] SoundI::release                          :     Enviroment_lake_ambient_loop (000002039C78B958)
-[LOG] SoundI::release                          :     Enviroment_lake_ambient_loop (0000020379D21E28)
-[LOG] SoundI::release                          : Enviroment_lake_ambient_loop (000002041237FDA8)
-[LOG] SoundI::release                          :     Enviroment_lake_ambient_loop (000002039C78DB78)
-[LOG] SoundI::release                          :     Enviroment_lake_ambient_loop (00000202B4B8CD38)
-[LOG] SoundI::release                          : Enviroment_lake_ambient_loop (00000200A4059DA8)
-[LOG] SoundI::release                          :     Enviroment_lake_ambient_loop (000002039C78EBB8)
-[LOG] SoundI::release                          :     Enviroment_lake_ambient_loop (0000020379D21FD8)
-[LOG] SoundI::release                          : Audio_Ambience (000002040EFD3DD8)
-[LOG] SoundI::release                          :     Audio_Ambience (000002039C7953B8)
-[LOG] SoundI::release                          :     Audio_Ambience (0000020412206F28)
-[LOG] SoundI::release                          :  (00000202B58F7B98)
-[LOG] SoundI::release                          :     Audio_Ambience_bird_1 (000002039C78CE78)
-[LOG] SoundI::release                          :  (00000202B58F57A8)
-[LOG] SoundI::release                          :     Audio_Ambience_bird_2 (000002039C78E058)
-[LOG] SoundI::release                          :  (00000202B58F7A28)
-[LOG] SoundI::release                          :     Audio_Ambience_bird_3 (000002039C788F18)
-[LOG] SoundI::release                          :  (00000202B58F89F8)
-[LOG] SoundI::release                          :     Audio_Ambience_wind (000002039C78BE38)
-[LOG] SoundI::release                          :  (00000202B58F5918)
-[LOG] SoundI::release                          :     05 (000002039C7908F8)
-[LOG] SoundI::release                          :  (00000202B58F8E48)
-[LOG] SoundI::release                          :     Audio_Rhino_1 (000002039C7946B8)
-[LOG] SoundI::release                          :  (00000203FD5D6468)
-[LOG] SoundI::release                          :     Audio_Rhino_2 (000002039C790C38)
-[LOG] SoundI::release                          :  (00000202B58F8CD8)
-[LOG] SoundI::release                          :     Audio_Rhino_3 (000002039C791AD8)
-[LOG] SoundI::release                          :  (00000203FD5D6A28)
-[LOG] SoundI::release                          :     Audio_Rhino_4 (000002039C7949F8)
-[LOG] SoundI::release                          :  (00000202B58F75D8)
-[LOG] SoundI::release                          :     Audio_Rhino_Step (000002039C791938)
-[LOG] SoundI::release                          :  (00000203FD5D5EA8)
-[LOG] SoundI::release                          :     Audio_Rhino_Trap_1 (000002039C791C78)
-[LOG] SoundI::release                          :  (00000202B58F5A88)
-[LOG] SoundI::release                          :     Audio_Rhino_Trap_2 (000002039C7927D8)
-[LOG] Thread::callback                         : FMOD Studio update thread finished.
-[LOG] Thread::callback                         : FMOD Studio bank load thread finished.
-[LOG] Profile::disconnectAll                   : Profiler disconnecting all clients
-[LOG] Thread::callback                         : FMOD Studio sample load thread finished.
-[LOG] LiveUpdate::release                      : 
-[LOG] LiveUpdate::reset                        : Reset connection (reason Disconnected)
-[LOG] Thread::callback                         : FMOD stream thread finished.
-[LOG] Thread::callback                         : FMOD mixer thread finished.
-[LOG] Profile::disconnectAll                   : Profiler disconnecting all clients
-[LOG] SystemI::close                           : Closed.
+[LOG] Manager::readBank                        : fileversion = 142, compatVersion = 140 (oldest = 44, newest = 142)
+[LOG] Manager::readBank                        : fileversion = 142, compatVersion = 140 (oldest = 44, newest = 142)
+[LOG] Manager::readBank                        : fileversion = 142, compatVersion = 140 (oldest = 44, newest = 142)
+[LOG] PlaybackSystem::acquireMasterBus         : Setting master channel group format to 6
 [LOG] Thread::callback                         : FMOD Studio bank load thread finished.
 [LOG] Thread::callback                         : FMOD Studio sample load thread finished.
 [LOG] LiveUpdate::release                      : 
@@ -216,5 +25,3 @@
 [LOG] Thread::callback                         : FMOD stream thread finished.
 [LOG] Thread::callback                         : FMOD mixer thread finished.
 [LOG] SystemI::close                           : Closed.
-[LOG] Thread::callback                         : FMOD nonblocking thread (0) finished.
-[LOG] Thread::callback                         : FMOD file thread finished.
