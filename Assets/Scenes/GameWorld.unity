@@ -21597,7 +21597,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4301717871961465938, guid: b8bc3d41d2bef384baebe2f3b44b0beb, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -159.95
+      value: -195.84
       objectReference: {fileID: 0}
     - target: {fileID: 4301717871961465938, guid: b8bc3d41d2bef384baebe2f3b44b0beb, type: 3}
       propertyPath: m_LocalPosition.y
@@ -21680,9 +21680,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 6995136182952773140, guid: b8bc3d41d2bef384baebe2f3b44b0beb, type: 3}
       insertIndex: -1
       addedObject: {fileID: 2108963507}
-    - targetCorrespondingSourceObject: {fileID: 2958023527138149930, guid: b8bc3d41d2bef384baebe2f3b44b0beb, type: 3}
+    - targetCorrespondingSourceObject: {fileID: 6995136182952773140, guid: b8bc3d41d2bef384baebe2f3b44b0beb, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 1200254278}
+      addedObject: {fileID: 2108963508}
     - targetCorrespondingSourceObject: {fileID: 4906255563974427621, guid: b8bc3d41d2bef384baebe2f3b44b0beb, type: 3}
       insertIndex: -1
       addedObject: {fileID: 2128994728}
@@ -22690,24 +22690,6 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e8efa5f3f39eede46b964d93acc7a7de, type: 3}
---- !u!1 &1200254274 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 2958023527138149930, guid: b8bc3d41d2bef384baebe2f3b44b0beb, type: 3}
-  m_PrefabInstance: {fileID: 1165229586}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1200254278
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1200254274}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bab1acdc6fb4e6746839d0708c502be7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  currentTerrain: 3
 --- !u!1001 &1200698805
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -42259,6 +42241,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   attenuationObject: {fileID: 0}
+--- !u!114 &2108963508
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2108963491}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bab1acdc6fb4e6746839d0708c502be7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  currentTerrain: 0
 --- !u!1 &2122001394
 GameObject:
   m_ObjectHideFlags: 0

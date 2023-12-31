@@ -1169,7 +1169,7 @@ retry:
             }
             catch (EventNotFoundException)
             {
-                RuntimeUtils.DebugLogWarning("[FMOD] Event not found: " + eventReference);
+                RuntimeUtils.DebugLogWarning("Assets/FMOD_Banks/Desktop/Master.bank" + eventReference);
             }
         }
 
