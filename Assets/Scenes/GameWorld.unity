@@ -21572,6 +21572,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4164266259809562995, guid: b8bc3d41d2bef384baebe2f3b44b0beb, type: 3}
+      propertyPath: Footsteps
+      value: 
+      objectReference: {fileID: 2108963508}
+    - target: {fileID: 4164266259809562995, guid: b8bc3d41d2bef384baebe2f3b44b0beb, type: 3}
       propertyPath: sprintFOV
       value: 90.4
       objectReference: {fileID: 0}
@@ -21665,7 +21669,9 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 0}
-    m_RemovedGameObjects: []
+    - {fileID: -2154895233831538235, guid: b8bc3d41d2bef384baebe2f3b44b0beb, type: 3}
+    m_RemovedGameObjects:
+    - {fileID: 2958023527138149930, guid: b8bc3d41d2bef384baebe2f3b44b0beb, type: 3}
     m_AddedGameObjects:
     - targetCorrespondingSourceObject: {fileID: 4301717871961465938, guid: b8bc3d41d2bef384baebe2f3b44b0beb, type: 3}
       insertIndex: -1
@@ -21677,9 +21683,6 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 6995136182952773140, guid: b8bc3d41d2bef384baebe2f3b44b0beb, type: 3}
       insertIndex: -1
       addedObject: {fileID: 2108963506}
-    - targetCorrespondingSourceObject: {fileID: 6995136182952773140, guid: b8bc3d41d2bef384baebe2f3b44b0beb, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 2108963507}
     - targetCorrespondingSourceObject: {fileID: 6995136182952773140, guid: b8bc3d41d2bef384baebe2f3b44b0beb, type: 3}
       insertIndex: -1
       addedObject: {fileID: 2108963508}
@@ -42228,19 +42231,6 @@ MonoBehaviour:
   PlayerBranch: {fileID: 368598508}
   pauseMenu: {fileID: 1831624630}
   inGamePanel: {fileID: 833252669}
---- !u!114 &2108963507
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2108963491}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 86c6556701af9e04380698b89f691b6e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  attenuationObject: {fileID: 0}
 --- !u!114 &2108963508
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -42254,6 +42244,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   currentTerrain: 0
+  footstepSpeed: 0.3
 --- !u!1 &2122001394
 GameObject:
   m_ObjectHideFlags: 0

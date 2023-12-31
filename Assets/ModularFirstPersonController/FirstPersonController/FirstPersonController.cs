@@ -24,7 +24,6 @@ public class FirstPersonController : MonoBehaviour
     const string PLAYER_WALK = "walkingAnim";
     private Animator animator;
     #region Camera Movement Variables
-
     public Camera playerCamera;
 
     public float fov = 60f;
@@ -63,10 +62,9 @@ public class FirstPersonController : MonoBehaviour
     public bool playerCanMove = true;
     public float walkSpeed = 5f;
     public float maxVelocityChange = 10f;
-
   
     // Internal Variables
-    private bool isWalking = false;
+    public bool isWalking = false;
 
     #region Sprint
 
@@ -105,7 +103,7 @@ public class FirstPersonController : MonoBehaviour
     public float jumpPower = 5f;
 
     // Internal Variables
-    private bool isGrounded = false;
+    public bool isGrounded = false;
 
     #endregion
 
@@ -137,12 +135,12 @@ public class FirstPersonController : MonoBehaviour
 
     #endregion
 
+
     private void Awake()
     {
         rb = GetComponent<Rigidbody>();
         animator = gameObject.GetComponentInChildren<Animator>();
         crosshairObject = GetComponentInChildren<Image>();
-
         // Set internal variables
         playerCamera.fieldOfView = fov;
         originalScale = transform.localScale;
@@ -171,7 +169,7 @@ public class FirstPersonController : MonoBehaviour
         {
             crosshairObject.gameObject.SetActive(false);
         }
-
+         
         #region Sprint Bar
 
         sprintBarCG = GetComponentInChildren<CanvasGroup>();
@@ -208,7 +206,6 @@ public class FirstPersonController : MonoBehaviour
 
     private void Update()
     {
-
         #region Camera
 
         // Control camera movement
@@ -385,14 +382,14 @@ public class FirstPersonController : MonoBehaviour
             if (targetVelocity.x != 0 || targetVelocity.z != 0 && isGrounded)
             {
                 isWalking = true;
-                ChangeAnimationState(PLAYER_WALK);
-                animator.SetFloat("Speed", 0.2f);
+                //ChangeAnimationState(PLAYER_WALK);
+               // animator.SetFloat("Speed", 0.2f);
             }
             else
             {
                 isWalking = false;
-                ChangeAnimationState(PLAYER_IDLE);
-                animator.SetFloat("Speed", 0);
+                //ChangeAnimationState(PLAYER_IDLE);
+               // animator.SetFloat("Speed", 0);
             }
 
             // All movement calculations shile sprint is active
@@ -538,7 +535,7 @@ public class FirstPersonController : MonoBehaviour
         }
     }
 
-    private void ChangeAnimationState(string newState)
+   /* private void ChangeAnimationState(string newState)
     {
         if (newState == _currentState)
         {
@@ -547,7 +544,7 @@ public class FirstPersonController : MonoBehaviour
 
         animator.Play(newState);
         _currentState = newState;
-    }
+    }*/
 
     //check if specific animation is playing
     //parameter named "0" is the animation layer

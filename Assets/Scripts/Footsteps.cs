@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PlayerFootsteps : MonoBehaviour
+public class Footsteps : MonoBehaviour
 {
 
     private enum CURRENT_TERRAIN { LEVEL, ROAD, GROUND, WATER };
@@ -12,9 +12,31 @@ public class PlayerFootsteps : MonoBehaviour
 
     private FMOD.Studio.EventInstance foosteps;
 
+    private FirstPersonController playerController;
+
+    float timer = 0.0f;
+
+    [SerializeField]
+    float footstepSpeed = 0.3f;
+    private void Start()
+    {
+        playerController = GetComponent<FirstPersonController>();
+
+    }
     private void Update()
     {
         DetermineTerrain();
+
+        if (playerController.isWalking && playerController.isGrounded)
+        {
+            if (timer > footstepSpeed)
+            {
+                SelectAndPlayFootstep();
+
+                timer = 0.0f;
+            }
+            timer += Time.deltaTime;
+        }
     }
 
     private void DetermineTerrain()
@@ -22,7 +44,7 @@ public class PlayerFootsteps : MonoBehaviour
         RaycastHit[] hit;
 
         hit = Physics.RaycastAll(transform.position, Vector3.down, 10.0f);
-
+        
         foreach (RaycastHit rayhit in hit)
         {
             if (rayhit.transform.gameObject.layer == LayerMask.NameToLayer("Road"))
@@ -38,10 +60,12 @@ public class PlayerFootsteps : MonoBehaviour
             else if (rayhit.transform.gameObject.layer == LayerMask.NameToLayer("Level"))
             {
                 currentTerrain = CURRENT_TERRAIN.LEVEL;
+                break;
             }
             else if (rayhit.transform.gameObject.layer == LayerMask.NameToLayer("Water"))
             {
                 currentTerrain = CURRENT_TERRAIN.WATER;
+                break;
             }
         }
     }
@@ -74,7 +98,7 @@ public class PlayerFootsteps : MonoBehaviour
 
     private void PlayFootstep(int terrain)
     {
-        foosteps = FMODUnity.RuntimeManager.CreateInstance("event:/Footsteps");
+        foosteps = FMODUnity.RuntimeManager.CreateInstance("Assets/FMOD_Banks/Desktop/Master.strings.bank");
         foosteps.setParameterByName("Terrain", terrain);
         foosteps.set3DAttributes(FMODUnity.RuntimeUtils.To3DAttributes(gameObject));
         foosteps.start();
