@@ -66,7 +66,7 @@ public class Timer : MonoBehaviour
     {
         int minutes = Mathf.FloorToInt(currentTime / 60);
         int seconds = Mathf.FloorToInt(currentTime % 60);
-        timerText.text = string.Format("{0:00}:{1:00}" + " " + trapsDisabled + "/" + trapsToDisable, minutes, seconds);
+        timerText.text = string.Format("{0:00}:{1:00}" + "                   " + trapsDisabled + "/" + trapsToDisable, minutes, seconds);
     }
 
     // Handle game over (win or lose)
