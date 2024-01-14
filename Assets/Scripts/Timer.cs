@@ -66,7 +66,7 @@ public class Timer : MonoBehaviour
     {
         int minutes = Mathf.FloorToInt(currentTime / 60);
         int seconds = Mathf.FloorToInt(currentTime % 60);
-        timerText.text = string.Format("Time: {0:00}:{1:00}" + " " + "Traps "+ trapsDisabled + "/" + trapsToDisable, minutes, seconds);
+        timerText.text = string.Format("{0:00}:{1:00}" + " " + trapsDisabled + "/" + trapsToDisable, minutes, seconds);
     }
 
     // Handle game over (win or lose)
@@ -77,7 +77,7 @@ public class Timer : MonoBehaviour
         {
             // Handle win (e.g., show win screen)
             rawImage.texture = NewTexture;
-            timerText.text = "Find: 1 / 0";
+            timerText.text = "Find:";
 
         }
         else
